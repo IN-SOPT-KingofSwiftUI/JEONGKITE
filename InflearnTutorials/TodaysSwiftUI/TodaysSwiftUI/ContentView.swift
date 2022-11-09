@@ -220,14 +220,31 @@ struct ContentView: View {
 //            }
 //        }
         
-        Image(systemName: "sun.max")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .padding()
-            .frame(width: 300)
-            .background(.blue)
-            .foregroundColor(.yellow)
+//        Image(systemName: "sun.max")
+//            .resizable()
+//            .aspectRatio(contentMode: .fit)
+//            .padding()
+//            .frame(width: 300)
+//            .background(.blue)
+//            .foregroundColor(.yellow)
             
+        VStack {
+            Image(systemName: "sun.max")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300)
+                .background(.blue)
+                .foregroundColor(.yellow)
+                .padding(.bottom, 100)
+            Image(systemName: "sun.max")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding([.leading, .trailing], 30)
+                .frame(width: 300)
+                .background(.blue)
+                .foregroundColor(.yellow)
+        }
+        
         
     }
 }
