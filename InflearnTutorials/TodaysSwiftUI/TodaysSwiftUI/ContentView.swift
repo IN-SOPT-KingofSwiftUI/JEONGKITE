@@ -14,6 +14,9 @@ struct Person: Identifiable {
 }
 
 struct ContentView: View {
+    
+    @State var name: String = ""
+    
     var body: some View {
         
         
@@ -205,15 +208,26 @@ struct ContentView: View {
 //                .clipShape(Circle())
 //        }
         
-        MyView()
+//        MyView()
+        
+        VStack {
+            Text("Hi \(name)")
+            
+            Button {
+                name = "kite!"
+            } label: {
+                Text("Click!")
+            }
+        }
+        
     }
 }
 
-struct MyView: View {
-    var body: some View {
-        Text("It's My View!!")
-    }
-}
+//struct MyView: View {
+//    var body: some View {
+//        Text("It's My View!!")
+//    }
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
