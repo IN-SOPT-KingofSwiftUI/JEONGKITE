@@ -196,16 +196,22 @@ struct ContentView: View {
 //                Text("Sending Message")
 //            }
 //        }
-        VStack {
-            Color(.lightGray).edgesIgnoringSafeArea(.all)
-                .frame(width: 300, height: 200)
-                .clipShape(Circle())
-            Color("kite")
-                .frame(width: 300, height: 200)
-                .clipShape(Circle())
-        }
+//        VStack {
+//            Color(.lightGray).edgesIgnoringSafeArea(.all)
+//                .frame(width: 300, height: 200)
+//                .clipShape(Circle())
+//            Color("kite")
+//                .frame(width: 300, height: 200)
+//                .clipShape(Circle())
+//        }
         
-        
+        MyView()
+    }
+}
+
+struct MyView: View {
+    var body: some View {
+        Text("It's My View!!")
     }
 }
 
