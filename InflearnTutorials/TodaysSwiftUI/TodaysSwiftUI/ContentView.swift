@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct Person: Identifiable {
-    var id = UUID()
-    let name: String
-    let imageName: String
-}
+//struct Person: Identifiable {
+//    var id = UUID()
+//    let name: String
+//    let imageName: String
+//}
 
 struct ContentView: View {
     
-    @State var name: String = ""
+//    @State var name: String = ""
     
     var body: some View {
         
@@ -210,15 +210,24 @@ struct ContentView: View {
         
 //        MyView()
         
-        VStack {
-            Text("Hi \(name)")
+//        VStack {
+//            Text("Hi \(name)")
+//
+//            Button {
+//                name = "kite!"
+//            } label: {
+//                Text("Click!")
+//            }
+//        }
+        
+        Image(systemName: "sun.max")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding()
+            .frame(width: 300)
+            .background(.blue)
+            .foregroundColor(.yellow)
             
-            Button {
-                name = "kite!"
-            } label: {
-                Text("Click!")
-            }
-        }
         
     }
 }
