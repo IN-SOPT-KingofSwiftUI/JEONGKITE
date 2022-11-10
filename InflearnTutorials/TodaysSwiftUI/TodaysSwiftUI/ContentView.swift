@@ -20,22 +20,7 @@ struct ContentView: View {
     var body: some View {
         
         
-//        Button {
-//            print("Hited2")
-//        } label: {
-////            Image(systemName: "heart")
-//            Text("Hitme2!!")
-//                .padding()
-//                .frame(width: 150)
-//                .background(.black)
-//                .cornerRadius(12)
-//        }
-        
-//        Button(role: .cancel, action: {
-//            print("cancel!!")
-//        }, label: {
-//            Text("cancel")
-//        })
+
         
 //        VStack {
 //            Text("hello")

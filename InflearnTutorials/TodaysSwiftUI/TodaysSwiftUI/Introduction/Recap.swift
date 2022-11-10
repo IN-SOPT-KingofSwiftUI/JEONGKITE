@@ -16,7 +16,7 @@ struct Recap: View {
         // Text, Image, List, Stack, frame, padding
         
         ZStack {
-            Color.gray.edgesIgnoringSafeArea(.all)
+            Color.yellow.edgesIgnoringSafeArea(.all)
             
             VStack {
                 Spacer()
