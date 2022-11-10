@@ -18,6 +18,8 @@ struct ContentView: View {
 //    @State var name: String = ""
     
     var body: some View {
+        
+        
 
         
 //        VStack {
@@ -211,14 +213,14 @@ struct ContentView: View {
 //            .background(.blue)
 //            .foregroundColor(.yellow)
             
-//        VStack {
-//            Image(systemName: "sun.max")
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: 40)
-//                .background(.blue)
-//                .foregroundColor(.yellow)
-//        }
+        VStack {
+            Image(systemName: "sun.max")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40)
+                .background(.blue)
+                .foregroundColor(.yellow)
+        }
         
         
     }
